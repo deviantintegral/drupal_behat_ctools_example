@@ -1,0 +1,18 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+        - Drupal\DrupalExtension\Context\MessageContext
+        - Drupal\DrupalExtension\Context\DrushContext
+  extensions:
+    Behat\MinkExtension:
+      # goutte: ~
+      selenium2: ~
+      base_url: http://d8.local
+      javascript_session: selenium2
+      browser_name: chrome
+    Drupal\DrupalExtension:
+      blackbox: ~
