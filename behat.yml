@@ -16,3 +16,5 @@ default:
       browser_name: chrome
     Drupal\DrupalExtension:
       blackbox: ~
+      drush:
+        alias: d8.local
